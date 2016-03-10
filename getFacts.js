@@ -1,8 +1,11 @@
-function returnFact {
+var express = require('express')
+var app = express()
+
+function returnFact() {
 
 	var randomFacts = require('./randomFacts.js');
 
-	function getFacts {
+	function getFacts () {
 		var factIndex = Math.floor(Math.random() * facts.length);
 		var randomFact = facts[factIndex]; 
 	};

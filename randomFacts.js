@@ -1,3 +1,6 @@
+var express = require('express');
+var app = express();
+
 var facts = [
 	"Oscar the Grouch used to be orange. Jim Henson decided to make him green before the second season of Sesame Street. How did Oscar explain the color change? He said he went on vacation to the very damp Swamp Mushy Muddy and turned green overnight.",
 	"Fredric Baur invented the Pringles can. When he passed away in 2008, his ashes were buried in one.",
@@ -15,4 +18,16 @@ var facts = [
 	"Failed PEZ flavors include coffee, eucalyptus, menthol, and flower."
 	];
 
-module.exports.facts = facts;
+app.get('/', function(req, res) {
+  res.json(facts);
+});
+
+app.get('/facts/random', function(req, res) {
+  var id = Math.floor(Math.random() * facts.length);
+  var q = facts[id];
+  res.json(q);
+});
+
+
+
+app.listen(process.env.PORT || 3412);
