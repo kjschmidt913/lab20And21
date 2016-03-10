@@ -1,0 +1,23 @@
+{
+  "name": "lab20and21",
+  "version": "0.0.1",
+  "description": "lab 20 and 21 express stuff",
+  "main": "getFacts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjschmidt913/lab20And21.git"
+  },
+  "author": "Kj and Tom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kjschmidt913/lab20And21/issues"
+  },
+  "homepage": "https://github.com/kjschmidt913/lab20And21#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  }
+}
